@@ -1,0 +1,331 @@
+:root {
+	scroll-behavior: smooth;
+	font-size: 16px;
+	--grey-color: #697789;
+	--purple-color: #6e62e4;
+	--pink-color: #ffbeb2;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+img {
+	line-height: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #f3f6fd;
+	font-family: 'Poppins', sans-serif;
+	line-height: 1;
+}
+
+/* Navbar */
+nav {
+	max-width: 1260px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 35px auto;
+}
+
+nav > a,
+nav ul li a {
+	text-decoration: none;
+}
+
+nav .brand {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #000000;
+}
+
+nav .brand span {
+	color: var(--purple-color);
+}
+
+nav .link {
+	display: flex;
+	width: 458px;
+	list-style: none;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .link li a {
+	color: var(--grey-color);
+	font-size: 1.125rem;
+	font-weight: 400;
+	transition: 0.2s ease-in;
+}
+
+nav .link li:nth-child(4) a,
+nav .link li a:hover {
+	color: #000000;
+}
+/* Akhir Navbar */
+
+/* Pricing Section */
+#pricing {
+	margin-bottom: 450px;
+}
+
+#pricing .container {
+	max-width: 890px;
+	margin: 98px auto 100px;
+}
+
+#pricing .description {
+	max-width: 368px;
+	margin: auto;
+	max-height: 139px;
+	text-align: center;
+}
+
+#pricing .description .title {
+	margin-bottom: 20px;
+}
+
+#pricing .description .title h2 {
+	font-size: 2.5rem;
+	font-weight: 600;
+}
+
+#pricing .description .title h2 span {
+	color: var(--purple-color);
+}
+
+#pricing .description .paragraph {
+	max-width: 310px;
+	margin: auto;
+}
+
+#pricing .description .paragraph p {
+	font-size: 1.125rem;
+	font-weight: 400;
+	color: var(--grey-color);
+	line-height: 32px;
+}
+
+#pricing .packages {
+	max-width: 890px;
+	height: 40px;
+	margin-top: 120px;
+	display: flex;
+	justify-content: center;
+}
+
+.packages .card {
+	background-color: white;
+	max-width: 290px;
+	height: 323px;
+	padding: 30px 33px;
+	border-radius: 30px;
+}
+
+.card .header {
+	display: flex;
+	align-items: center;
+}
+
+.card .header img {
+	margin-right: 12px;
+}
+
+.card .header .package-name {
+	height: 74px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.card .header .package-name h3 {
+	margin-bottom: 12px;
+	font-size: 1.25rem;
+	font-weight: 500;
+}
+
+.card .header .package-name p {
+	color: var(--grey-color);
+	font-size: 0.875rem;
+}
+
+.card .header .package-name p span.dolar {
+	font-size: 1.125rem;
+	position: relative;
+	top: -12px;
+}
+
+.card .header .package-name p span.number {
+	font-size: 1.75rem;
+	color: var(--purple-color);
+	font-weight: 500;
+}
+
+.card hr {
+	max-width: 210px;
+	border: 1px solid #ece7e7;
+	background-color: #ece7e7;
+	margin: 19px auto 21px;
+}
+
+.card .items li {
+	font-size: 1rem;
+	/* The way centering vertical list with background type */
+	list-style: none;
+	padding: 6px 10px 5px 30px;
+	background: url('../img/checklist-outline-purple.png') no-repeat;
+	background-position-x: left;
+	background-position-y: center;
+	vertical-align: middle;
+	/* ---- */
+	margin-left: -36px;
+	margin-bottom: 16px;
+	color: var(--grey-color);
+}
+
+.card .items li span {
+	color: black;
+	font-weight: 600;
+}
+
+.card button {
+	background-color: var(--purple-color);
+	border: 0;
+	width: 210px;
+	height: 50px;
+	border-radius: 100px;
+	font-synthesis: 1rem;
+	font-weight: 500;
+	color: white;
+	font-family: 'Poppins', sans-serif;
+	margin-top: 10px;
+}
+
+.card:nth-child(1) {
+	position: relative;
+}
+
+.card:nth-child(2) {
+	background-color: #3a3379;
+	height: 370px;
+	width: 350px;
+	transform: scale(1.1);
+	position: relative;
+	top: -30px;
+	z-index: 2;
+}
+
+.card:nth-child(2)::after {
+	content: '';
+	width: 438px;
+	height: 300px;
+	border-radius: 27px;
+	display: block;
+	position: relative;
+	top: -305px;
+	left: -100px;
+	background: #6a7180;
+	opacity: 0.4;
+	filter: blur(200px);
+	border-radius: 27px;
+}
+
+.card:nth-child(3) {
+	position: relative;
+}
+
+.card:nth-child(2) hr {
+	border: 1px solid #564f96;
+	background-color: #564f96;
+}
+
+.card:nth-child(2) .header h3 {
+	color: white;
+}
+
+.card:nth-child(2) .header p span.number {
+	color: var(--pink-color);
+}
+
+.card:nth-child(2) .header p {
+	color: #b2ade1;
+}
+
+.card:nth-child(2) .items li {
+	background: url('../img/checklist-outline-white.png') no-repeat;
+	padding: 6px 10px 5px 35px;
+	color: #b2ade1;
+}
+
+.card:nth-child(2) .items li span {
+	color: white;
+}
+
+.card:nth-child(2) button {
+	margin-bottom: 0;
+	color: black;
+	background-color: var(--pink-color);
+}
+/* Pricing Section */
+
+/* Trusted Companies Section */
+#trusted-companies {
+	margin-bottom: 100px;
+}
+
+#trusted-companies .container {
+	max-width: 1063px;
+	margin: auto;
+}
+
+#trusted-companies .header h3 {
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+#trusted-companies .header h3 span {
+	color: var(--purple-color);
+}
+
+#trusted-companies .companies {
+	display: flex;
+	max-width: 1059.14px;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 28px;
+}
+
+#trusted-companies img:nth-child(1),
+#trusted-companies img:last-child {
+	height: 40.68px;
+}
+
+#trusted-companies img:nth-child(2),
+#trusted-companies img:nth-child(3) {
+	height: 30px;
+}
+
+#trusted-companies img:nth-child(4) {
+	height: 40px;
+}
+/* Trusted Companies Section */
